@@ -8,10 +8,14 @@ The goal is to make the process of developing UIs in MSFS as painless as possibl
 * Hotreload HTML/CSS/JS changes without restarting the sim or flight
 * View console.log output in the game
 * Action buttons
+* _[TODO] Display SimVars/Simplane values_
 * _[TODO] Devtool like debugging UI_
-* _[TODO] Configurable Livereload_
 * _[TODO] Load content from local webserver_
 * ...
+
+### Hotkeys
+* ALT + T = Open/Close Panel
+* ALT + R = Reload page
 
 <img src="https://i.imgur.com/9P2kHUF.png" width="250" style="margin-left:30px">&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.com/V2Dl6bs.png" width="250" style="margin-left:30px"></img>
 
@@ -58,10 +62,27 @@ This will show a button in the open debug UI which executes the function when cl
 ## Known Limitations
 
 * On some FMC screens it might break the page layout and the content shifts UP for a few pixels. While not nice, its ok for development.
-* Sometimes seems to fail refresh of sources no matter what you do.
+* Sometimes seems to fail refresh of sources no matter what you do.   
+HTML/CSS usually always refreshes. When it fails for JS for you, a workaround would be to add a querystring to the import in the HTML file of the panel to bust the cache. Ofc I will work on ways to make this obsolete.
 
 ## Contributing
 Pull requests and further information on the insides are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## Contributors ✨
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/dga711"><img src="https://avatars0.githubusercontent.com/u/2995606?v=4" width="100px;" alt=""/><br /><sub><b>dga711</b></sub></a><br /><a href="#ideas-naorunaoru" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/dga711/msfs-webui-devkit/commits?author=dga711" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Smirow"><img src="https://avatars1.githubusercontent.com/u/16503412?v=4" width="100px;" alt=""/><br /><sub><b>Smirow</b></sub></a><br /><a href="https://github.com/dga711/msfs-webui-devkit/issues?q=is%3Aissue+author%3ASmirow" title="Bug reports">🐛</a> <a href="https://github.com/dga711/msfs-webui-devkit/commits?author=Smirow" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
